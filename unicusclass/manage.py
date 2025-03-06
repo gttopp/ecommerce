@@ -6,7 +6,7 @@ import sys
 
 def main():
     """Run administrative tasks."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'unicusclass.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'Basic.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
@@ -20,10 +20,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-
-class Unicusclass:
-    def _init_(self):
-        pass
-
-    def welcome_message(self):
-        print("Welcome to Unicus")
